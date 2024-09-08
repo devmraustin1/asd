@@ -1,0 +1,1546 @@
+<body class="modal-open" style="overflow: hidden; padding-right: 0px;">
+
+    
+
+    <!-- Preloader Ajax Start -->
+    <div id="preLoadCustom" class="d-none">
+        <div class="custom_preload d-flex align-items-center justify-content-center">
+            <img width="40px" class="loaderCustom" src="https://coin-crest.icu/asset/images/loader/loading-spiner.gif" alt="">
+            
+        </div>
+    </div>
+    <!-- Preloader Ajax End -->
+
+    <!-- custom loader -->
+    
+    <!-- * custom loader -->
+
+    
+
+    <main id="main" class="dashboard-main">
+        <section class="dashboard-section">
+            
+
+
+            <!-- Float btn -->
+            <style>
+    .multi-action {
+        display: inline-block;
+        position: fixed;
+        width: 56px;
+        height: 56px;
+        margin: 300px 0 0 -28px;
+        right: 15px;
+        bottom: 60px;
+        z-index: 9999999999;
+    }
+
+    .multi-action a {
+        padding-top: 11px;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .action-button {
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        border: 0;
+        outline: 0;
+        background: #fd0d61a6;
+        font-size: 24px;
+        color: white;
+        z-index: 2;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        transition: all .3s;
+    }
+    .action-button:hover {
+        color: white;
+    }
+    .action-button:focus {
+        color: white;
+    }
+
+    .float-btn {
+        position: absolute;
+        width: 46px;
+        height: 46px;
+        text-align: center;
+        border-radius: 50%;
+        border: 0;
+        outline: 0;
+        font-size: 24px;
+        color: white;
+        z-index: 2;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        transition: all .3s;
+    }
+
+    .float-btn:hover {
+        color: white;
+    }
+    .float-btn:focus {
+        color: white;
+    }
+
+    .telegram {
+        background: #0088ccba;
+        bottom: 65px;
+        right: 4px;
+    }
+    .whatsapp {
+        background: #158701ba;
+        bottom: 0px;
+        right: 65px;
+    }
+
+    .actions {
+        position: absolute;
+        list-style: none inside none;
+        margin: 0 0 0 0;
+        padding: 0;
+        width: auto;
+        float: left;
+        background-color: transparent;
+        top: 8px;
+        left: 8px;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+
+        li {
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+            margin: 0;
+            background: #212121;
+            color: #ffffff;
+            transition: all .3s;
+            transform: scale(.3);
+
+            &:nth-child(1) {
+                background: #ff9800;
+            }
+
+            &:nth-child(2) {
+                background: #2196F3;
+            }
+
+            &:nth-child(3) {
+                background: #FFEB3B;
+            }
+
+            &:nth-child(4) {
+                background: #E91E63;
+            }
+
+            &:nth-child(5) {
+                background: #4CAF50;
+            }
+
+            a {
+                background: inherit;
+                color: inherit;
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                line-height: 40px;
+                text-align: center;
+            }
+
+            &:active {
+                box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .action-button {
+        &.active {
+            box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+        }
+
+        &.active~.actions {
+
+            li {
+                transition: all .3s;
+                transform: scale(1);
+
+                &:nth-child(1) {
+                    margin-top: -56px;
+                }
+
+                &:nth-child(2) {
+                    margin-top: -104px;
+                }
+
+                &:nth-child(3) {
+                    margin-top: -152px;
+                }
+
+                &:nth-child(4) {
+                    margin-top: -200px;
+                }
+
+                &:nth-child(5) {
+                    margin-top: -248px;
+                }
+            }
+        }
+    }
+
+    .action-button span {
+        transition: all .3s;
+    }
+
+    .action-button {
+        &.active:not(.no-rotate) span {
+            transform: scale(1.5) rotate(-45deg);
+        }
+    }
+</style>
+
+
+
+
+            <!-- Top Nav -->
+            <!-- App Header -->
+<div class="appHeader bg-primary text-light">
+    <div class="left">
+        
+        <a href="https://coin-crest.icu/profile/setting" class="headerButton">
+            <ion-icon name="person-circle" role="img" class="md hydrated" aria-label="person circle"></ion-icon>
+        </a>
+         
+    </div>
+    
+    
+     <a href="https://coin-crest.icu">
+    <div class="pageTitle">
+        
+        <img src="https://coin-crest.icu/asset/theme3/images/logo/whitelogo.png" alt="logo" class="logo">
+    </div>
+    </a>
+    <div class="right">
+        <a href="javascript:void(0)" class="headerButton transactionLogBtn">
+            <ion-icon class="icon md hydrated" name="notifications" role="img" aria-label="notifications"></ion-icon>
+        </a>
+        
+        <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
+            <ion-icon name="menu-outline" role="img" class="md hydrated" aria-label="menu outline"></ion-icon>
+        </a>
+        
+    </div>
+</div>
+<!-- * App Header -->
+
+            <!-- Side Nav -->
+            <!-- App Sidebar -->
+<div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body p-0">
+                <!-- profile box -->
+                <div class="profileBox pt-2 pb-2">
+                    <div class="image-wrapper">
+                        <ion-icon name="person-circle" style="height: 40px; width: 40px;" role="img" class="md hydrated" aria-label="person circle"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <strong style="color: white;">XTRADE</strong>
+                                                  <div class="text-muted">Reffer ID: feifei</div>
+                                             </div>
+                    <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">
+                        <ion-icon name="close-outline" role="img" class="md hydrated" aria-label="close outline"></ion-icon>
+                    </a>
+                </div>
+                <!-- * profile box -->
+                
+                                 <!-- balance -->
+                <div class="sidebar-balance">
+                    <div class="listview-title">Balance</div>
+                    <div class="in">
+                        <h1 class="amount">₹ 11,000.00</h1>
+                    </div>
+                </div>
+                <!-- * balance -->
+                
+               
+
+                <!-- menu -->
+                <div class="listview-title mt-1">Menu</div>
+                <ul class="listview flush transparent no-line image-listview">
+                    <li>
+                        <a href="https://coin-crest.icu/dashboard" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="pie-chart-outline" role="img" class="md hydrated" aria-label="pie chart outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                Dashboard
+                                <span class="badge badge-danger">1</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="document-text-outline" role="img" class="md hydrated" aria-label="document text outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                Pages
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="apps-outline" role="img" class="md hydrated" aria-label="apps outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                Components
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="card-outline" role="img" class="md hydrated" aria-label="card outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                My Cards
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- * menu -->
+
+                <!-- others -->
+                <div class="listview-title mt-1">Others</div>
+                <ul class="listview flush transparent no-line image-listview">
+                    <li>
+                        <a href="" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="settings-outline" role="img" class="md hydrated" aria-label="settings outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                Settings
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="chatbubble-outline" role="img" class="md hydrated" aria-label="chatbubble outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                Support
+                            </div>
+                        </a>
+                    </li>
+                    
+                                        <li>
+                        <a href="https://coin-crest.icu/logout" class="item">
+                            <div class="icon-box bg-primary">
+                                <ion-icon name="log-out-outline" role="img" class="md hydrated" aria-label="log out outline"></ion-icon>
+                            </div>
+                            <div class="in">
+                                Log out
+                            </div>
+                        </a>
+                    </li>
+                     
+                </ul>
+                <!-- * others -->
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- * App Sidebar -->
+
+            <!-- App Capsule -->
+            <div id="appCapsule">
+                <!-- Withdraw Action Sheet -->
+<div class="modal fade action-sheet" id="miningModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Start AI Trading</h5>
+            </div>
+            <div class="modal-body">
+                <div class="action-sheet-content">
+                    <div id="miningModalBody">
+                        <div class="card glass-bg my-2">
+                            <div class="card-body p-2">
+                                <div class="row align-items-center">
+                                    <div class="col text-start">
+                                        <h6 class="mb-0 text-light small-font-lg text-start">Current Balance:</h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h6 class="mb-0 text-light small-font-lg">₹11,000.00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>
+                            .miningBtn {
+                                cursor: pointer;
+                            }
+                            .miningBtn:hover, .miningBtn:focus {
+                                scale: .95;
+                                transition: all ease-in .1s;
+                            }
+                        </style>
+                        <div class="text-center my-3">
+                            <div class="row justify-content-center">
+                                <div class="miningBtn col-auto">
+                                    <img width="150px" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Perspective-Button-Stop-icon.png" alt="">
+                                    <h1 class="text-light" style="margin-top: -110px; margin-bottom: 70px;">START</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- * Withdraw Action Sheet -->
+
+<style>
+    body {
+        overflow: hidden !important;
+    }
+</style>
+
+
+<div class="tradingview-widget-container" style="height: 51vh; width: 100%;">
+    <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://www.tradingview-widget.com/embed-widget/market-overview/?locale=en#%7B%22colorTheme%22%3A%22dark%22%2C%22dateRange%22%3A%2212M%22%2C%22showChart%22%3Atrue%2C%22width%22%3A%22100%25%22%2C%22largeChartUrl%22%3A%22%22%2C%22isTransparent%22%3Atrue%2C%22showSymbolLogo%22%3Atrue%2C%22showFloatingTooltip%22%3Atrue%2C%22tabs%22%3A%5B%7B%22title%22%3A%22Crypto%22%2C%22symbols%22%3A%5B%7B%22s%22%3A%22BINANCE%3ABTCUSDT%22%7D%5D%2C%22originalTitle%22%3A%22Forex%22%7D%5D%2C%22utm_source%22%3A%22coin-crest.icu%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22market-overview%22%2C%22page-uri%22%3A%22coin-crest.icu%2Fbet%2FBTCUSDT%22%7D" title="market overview TradingView widget" lang="en" style="user-select: none; box-sizing: border-box; display: block; height: 100%; width: 100%;"></iframe>
+    
+<style>
+	.tradingview-widget-copyright {
+		font-size: 13px !important;
+		line-height: 32px !important;
+		text-align: center !important;
+		vertical-align: middle !important;
+		/* @mixin sf-pro-display-font; */
+		font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', Roboto, Ubuntu, sans-serif !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright .blue-text {
+		color: #2962FF !important;
+	}
+
+	.tradingview-widget-copyright a {
+		text-decoration: none !important;
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:visited {
+		color: #B2B5BE !important;
+	}
+
+	.tradingview-widget-copyright a:hover .blue-text {
+		color: #1E53E5 !important;
+	}
+
+	.tradingview-widget-copyright a:active .blue-text {
+		color: #1848CC !important;
+	}
+
+	.tradingview-widget-copyright a:visited .blue-text {
+		color: #2962FF !important;
+	}
+	</style></div>
+
+<div class="container">
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-6 d-inline-block text-truncate px-1 mb-1">
+            <a class="btn btn-primary w-100 buy-win">Buy Up</a>
+        </div>
+        <div class="col-6 d-inline-block text-truncate px-1 mb-1">
+            <a class="btn btn-danger w-100 buy-loose">Buy Down</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade show" id="win-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-modal="true" style="display: block;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">BTCUSDT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/bet/store" method="post">
+                    <input type="hidden" name="_token" value="TOxZC6hSygqmPS34UhB4mEy1SCfO4ADrmdjzn2ps">                    <hr style="width:20%; height:3px; border-radius: 30px;">
+                    
+                    <div class="form-group">
+                        <label for="name">Select Period</label>
+                        <input type="text" value="0" name="period" id="period" hidden="">
+                        <input type="text" value="up" name="type" id="type" hidden="">
+                        <input type="text" value="BTCUSDT" name="coin" id="coin" hidden="">
+                        <input type="text" value="0" name="profit" id="profit" hidden="">
+                        <div class="row justify-content-center">
+                            <div style="width:33%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setP1" onclick="setPeriod(1)" class="btn btn-primary w-100">1 day <br> 7% </span>
+                            </div>
+                            <div style="width:34%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setP3" onclick="setPeriod(3)" class="btn btn-primary w-100">3 days <br> 23% </span>
+                            </div>
+                            <div style="width:33%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setP9" onclick="setPeriod(9)" class="btn btn-primary w-100">9 days <br> 75% </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <hr style="width:20%; height:3px; border-radius: 30px;">
+
+                    <div class="form-group">
+                        <label for="number">Select Amount</label>
+                        <div class="row justify-content-center">
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setA100" onclick="setAmount(100)" class="btn btn-success w-100"> 100 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setA200" onclick="setAmount(200)" class="btn btn-success w-100"> 200 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setA500" onclick="setAmount(500)" class="btn btn-success w-100"> 500 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setA1000" onclick="setAmount(1000)" class="btn btn-success w-100"> 1000 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="setA2000" onclick="setAmount(2000)" class="btn btn-success w-100"> 2000 <br> USDT </span>
+                            </div>
+                        </div>
+                        <label for="number">Custom Amount</label>
+                        <input type="text" class="form-control" id="amount" onkeypress="updateProfit()" name="amount" value="" placeholder="Amount">
+                    </div>
+                    
+                    <hr style="width:20%; height:3px; border-radius: 30px;">
+                    
+                    <div class="row justify-content-between">
+                        <span class="col-9">Balance: <span>11000.00000000</span> USDT</span>
+                        <div class="col-3">
+                            <div class="row justify-content-center">
+                                <div style="width:100%;" class="d-inline-block text-truncate px-1 mb-1">
+                                    <a style="border-radius: 5px;" href="#" class="btn btn-primary btn-sm w-100"> Deposit </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <hr style="width:100%; height:3px; border-radius: 30px;">
+                    
+                    <div class="row justify-content-center">
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100"> Symbol <br> BTCUSDT </span>
+                        </div>
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100"> Direction <br> Buy Up </span>
+                        </div>
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100" id="betAmount"> Money <br> 0 USDT </span>
+                        </div>
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100" id="betProfit"> Profit <br> 0 USDT </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <button class="btn btn-success w-100 mt-2" id="submit">Confirm Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="loose-modal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">BTCUSDT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/bet/store" method="post">
+                    <input type="hidden" name="_token" value="TOxZC6hSygqmPS34UhB4mEy1SCfO4ADrmdjzn2ps">                    <hr style="width:20%; height:3px; border-radius: 30px;">
+                    
+                    <div class="form-group">
+                        <label for="name">Select Period</label>
+                        <input type="text" value="0" name="period" id="Lperiod" hidden="">
+                        <input type="text" value="down" name="type" id="Ltype" hidden="">
+                        <input type="text" value="BTCUSDT" name="coin" id="Lcoin" hidden="">
+                        <input type="text" value="0" name="profit" id="Lprofit" hidden="">
+                        <div class="row justify-content-center">
+                            <div style="width:33%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetP1" onclick="LsetPeriod(1)" class="btn btn-primary w-100">1 day <br> 7% </span>
+                            </div>
+                            <div style="width:34%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetP3" onclick="LsetPeriod(3)" class="btn btn-primary w-100">3 days <br> 23% </span>
+                            </div>
+                            <div style="width:33%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetP9" onclick="LsetPeriod(9)" class="btn btn-primary w-100">9 days <br> 75% </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <hr style="width:20%; height:3px; border-radius: 30px;">
+
+                    <div class="form-group">
+                        <label for="number">Select Amount</label>
+                        <div class="row justify-content-center">
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetA100" onclick="LsetAmount(100)" class="btn btn-success w-100"> 100 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetA200" onclick="LsetAmount(200)" class="btn btn-success w-100"> 200 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetA500" onclick="LsetAmount(500)" class="btn btn-success w-100"> 500 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetA1000" onclick="LsetAmount(1000)" class="btn btn-success w-100"> 1000 <br> USDT </span>
+                            </div>
+                            <div style="width:20%;" class="d-inline-block text-truncate px-1 mb-1">
+                                <span style="border-radius: 5px;" id="LsetA2000" onclick="LsetAmount(2000)" class="btn btn-success w-100"> 2000 <br> USDT </span>
+                            </div>
+                        </div>
+                        <label for="number">Custom Amount</label>
+                        <input type="text" class="form-control" id="Lamount" onkeypress="LupdateProfit()" name="amount" value="" placeholder="Amount">
+                    </div>
+                    
+                    <hr style="width:20%; height:3px; border-radius: 30px;">
+                    
+                    <div class="row justify-content-between">
+                        <span class="col-9">Balance: <span>11000.00000000</span> USDT</span>
+                        <div class="col-3">
+                            <div class="row justify-content-center">
+                                <div style="width:100%;" class="d-inline-block text-truncate px-1 mb-1">
+                                    <a style="border-radius: 5px;" href="#" class="btn btn-primary btn-sm w-100"> Deposit </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <hr style="width:100%; height:3px; border-radius: 30px;">
+                    
+                    
+                    <div class="row justify-content-center">
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100"> Symbol <br> BTCUSDT </span>
+                        </div>
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100"> Direction <br> Buy Loose </span>
+                        </div>
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100" id="LbetAmount"> Money <br> 0 USDT </span>
+                        </div>
+                        <div style="width:25%;" class="d-inline-block text-truncate px-1 mb-1">
+                            <span style="border-radius: 5px;" class="btn btn-transparent text-white w-100" id="LbetProfit"> Profit <br> 0 USDT </span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <button class="btn btn-success w-100 mt-2" id="Lsubmit">Confirm Order</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+
+            <!-- Bottom Nav -->
+            <style>
+    .item .white {
+        filter: brightness(0) saturate(100%) invert(75%) sepia(8%) saturate(259%) hue-rotate(172deg) brightness(95%) contrast(87%);
+    }
+    .item .active {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(30%) saturate(0%) hue-rotate(305deg) brightness(101%) contrast(103%) !important;
+    }
+    .item .hover{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(30%) saturate(0%) hue-rotate(305deg) brightness(101%) contrast(103%) !important;
+    }
+    
+    /* .item .active {
+        filter: brightness(0) saturate(100%) invert(9%) sepia(73%) saturate(6836%) hue-rotate(356deg) brightness(96%) contrast(105%);
+    } */
+</style>
+
+<!-- App Bottom Menu -->
+<div class="appBottomMenu">
+    <a href="https://coin-crest.icu" class="item customLink">
+        <div class="col">
+            <img class="white " height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/747/747846.png" alt="">
+            <strong>Home</strong>
+        </div>
+    </a>
+    <a href="https://t.me/Coinhako1224" class="item customLink">
+        <div class="col">
+            <img class="white  " height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/1067/1067566.png" alt="">
+            <strong>Support</strong>
+        </div>
+    </a>
+    <a href="/select-coin" class="item customLink">
+        <div class="col">
+            <img class="white " height="30px" width="30px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAABdRJREFUaEPtmntsFHUQx7+zuy3QGlFRHmrERKPik6g0KtGAjyC3rSY+GmIgAWKaBqRAub22SHGVQtvdo01bbNGQYAxKQhWj3NVijBhNKkgQQeWRmEgkvEUF6UN7t2MW0vZarnd7u9sjgd1/d+Y785mZ3d/+flnCFXbRFcYLD/hy77jXYa/Dl1kF0jrSi2tar8uIRv3MeEgAvo8IRt1qf94f6axp2oAVLTSXiCoAjOsD5KMALdMUeX26oIcc2K+H7iWmtUSYPBgUM38bNXhBTWnenqEGHzJgc3wlI7qcGPMBSBZAugE0dIviytriZ/+0YG/LZEiAFS08mwir+o+vtfwYfAQsLNUDvveteaRm5SpwaWXoWkOiDwBMTy2NeNbUIkSMmVVluX851+pTcBVY0cJNRCh0K0EmvK375dfc0jN13AXWQ/sJdJdbCRKwr1qR73FLz3XggBbeB8IE1xJk7NcC8t2u6bndYQ/YaWu8DjutoMsvLW+knTbEG2mnFfRG2lkFFZc/PBh8QFdy3VvX3V6HFS3URkSPOitbP+82TZEH3VbaiePqp6VfDz0tMIVByLSTzACfCDPy9IDc6oJWr4SrwKbqkmD4CdHAGhDuc5DowWgUBatL5W8caMR1dR3YjLKgvmXY8K7oQpDwOgFXW02agbMEVHSL7Wtqi/M7rfqlYucYeJH6yTWZI6Q7ujMyfh14UrGotnVcZiRSz6AXKcmKwMzNEYkX1xbnHYkFKFu1eVRUzLitc4R4oKHIdzYVuHi2toFVdZvUkd1ZCPAbAK4HcAbgypPtp+reU+d0xQYLVIemQqQ6cJwxZxxkGEV6IO+LWJ8CdUvWyCxaBKKSC1NCJwGs+G38uabm/PyoXXBbwMVVocdEkZoIuH9gYHMpYQjzg4rvq9h7s9X1w0dnj1kIcBmAkWaBmFGV3WHUq2peR78CBcPPMKOegHh76x8NoDCoyDvsQKcEvHDlp2OGZUorGZibbEQBbIoIkr9mybTDsYmZj4CULU0Qo537qkvzz8TeK6n67BYWhVqAXkgEwwCD8S6TtDyoTDM7b/myBPzypk3irYey5hGoHIQbrKoz+G8wV3YdFusaGnz/DuanqtuGt2e1F/eNr8UIjBMGGRVXte9qVFXVsOKVFDhQHX4YAq8D6AErgvFszDEnQ5ijlfi2D7zvr9wyRZCEtQDutKsP0A+RSPerNWXP706mkRDYr38+ReDoVhA5/pBgoJuIXtH8vo96kirRQzMYtDFZkhbvdxkQngwq079LZJ8QOKCFvgTRUxYDJjVjYIeuyI/0GAaC4b1x39xJlQY1aNUUOeERcUJgRQ//QoB7h2iEE5pfHns+XWYK6OFTIBpln++iNWKPpuROdNLhn0Hk5jHpMU2Rb+wFDracAKy/BC0UZremyA96wDEVSPYMex22MFaJTLyR9p5hZyPkvbQG1s97acVWJKCF9zo8qhlY4N81RR7f+6WlhY+DMMbZFPd5M7BTV+Qc++uwvqUOEIrcS4g36ErurF7g6tBGCDTDNX1GlR6Qzf32oFeSzcPWbAHRjwGe5jgpwvbO/+i5hqW+Uz1afn3zaMKwEAGTHOuDt55r73ipUc0/Zxu4txPB8CxmVBJwU8qJMZ9m4M1DOzsam5svPpqZoqpSTvakeQyU04WjotQu5qMGoSSo5G6w4ph0P9wjcv43pEhkGQhFBBKtiDNjHYByPSAfT2avaOGxgLGCSJgDwIp+BED9PxGuaErhxxfLwD0JK1p4IsD1RPT4YBAM7BIELqpektuWDHTgfUVrmUyEeoATbQLaSERhdbH8U6r6KQObAVRVFdqzcmYScVX/f7HoNAx+K6szq1FVp5odsHUVFLyTMfL2m+cRcTkQu32kozCiAa0k70Nzg2lH3BZwTyDzv6yoCD8IUwn0tSSJDasWP3vMTiLxfMwxJ0IZGDkgbBMirDv9b8sRsFtg6dTxgNNZ7UsRy+vwpah6OmN6HU5ntS9FrP8BehRgWzhF3cQAAAAASUVORK5CYII=" alt="">
+            <strong>Trade</strong>
+        </div> 
+    </a>
+    
+    
+    <a href="https://coin-crest.icu/withdraw" class="item customLink">
+        <div class="col">
+            <img class="white " height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/5928/5928961.png" alt="">
+            <strong>Withdraw</strong>
+        </div>
+    </a>
+            <a href="https://coin-crest.icu/dashboard" class="item customLink">
+        <div class="col">
+            <img class="white " height="30px" width="30px" src="https://cdn-icons-png.flaticon.com/128/12274/12274974.png" alt="">
+            <strong>Mine</strong>
+        </div>
+    </a>
+    </div>
+<!-- * App Bottom Menu -->
+
+
+            <!-- Deposit Action Sheet -->
+            
+            <!-- Withdraw Action Sheet -->
+            
+            <!-- Transfer Action Sheet -->
+            
+
+
+
+        </section>
+    </main>
+
+    
+    <script src="https://coin-crest.icu/asset/theme3/frontend/js/jquery.min.js"></script>
+    <script src="https://coin-crest.icu/asset/theme3/frontend/vendor/purecounter/purecounter.js"></script>
+    <script src="https://coin-crest.icu/asset/theme3/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://coin-crest.icu/asset/theme3/frontend/js/feather.min.js"></script>
+
+    <script src="https://coin-crest.icu/asset/theme3/frontend/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="https://coin-crest.icu/asset/theme3/frontend/vendor/php-email-form/validate.js"></script>
+    <script src="https://coin-crest.icu/asset/theme3/frontend/js/selectric.min.js"></script>
+
+    <script src="https://coin-crest.icu/asset/theme3/frontend/js/iziToast.min.js"></script>
+    <script src="https://coin-crest.icu/asset/theme3/frontend/js/jquery.uploadPreview.min.js"></script>
+    <script src="https://coin-crest.icu/asset/theme3/frontend/js/user_dashboard.js"></script>
+
+
+    <!-- ========= Custom JS Files Start =========  -->
+    <!-- Bootstrap -->
+    <script src="https://coin-crest.icu/asset/theme3/assets/js/lib/bootstrap.bundle.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="https://coin-crest.icu/asset/theme3/assets/js/plugins/splide/splide.min.js"></script>
+    <!-- Base Js File -->
+    <script src="https://coin-crest.icu/asset/theme3/assets/js/base.js"></script>
+    <!-- Sweet Alert 2.0 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Owl carousel 2.3.4 -->
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo").owlCarousel({
+                navigation : true, // Show next and prev buttons
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                loop:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                items : 1,
+                itemsDesktop : false,
+                itemsDesktopSmall : false,
+                itemsTablet: false,
+                itemsMobile : false
+            });
+        });
+        'use strict';
+        $(document).ready(function() {
+            $(document).on('click', '#calculate-btn', function() {
+
+                let modal = $('#calculationModal');
+
+                $('.selectplan').text('');
+                $('.amount').text('');
+                let id = $('#plan').val();
+                let amount = $('#amount').val();
+                var url = "https://coin-crest.icu/investment/calculate/:id";
+                url = url.replace(':id', id);
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    data: {
+                        amount: amount,
+                        selectplan: id
+                    },
+                    success: (data) => {
+                        if (data.message) {
+                            iziToast.error({
+                                message: data.message + ' ' + Number(data.amount)
+                                    .toFixed(2),
+                                position: 'topRight',
+                            });
+
+                        } else {
+                            $('#profit').html(data);
+                            modal.modal('show');
+                        }
+
+
+                    },
+                    error: (error) => {
+                        if (typeof(error.responseJSON.errors.amount) !== "undefined") {
+                            iziToast.error({
+                                message: error.responseJSON.errors.amount,
+                                position: 'topRight',
+                            });
+                        }
+                        if (typeof(error.responseJSON.errors.selectplan) !== "undefined") {
+                            iziToast.error({
+                                message: error.responseJSON.errors.selectplan,
+                                position: 'topRight',
+                            });
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        // Add to Home with 2 seconds delay.
+        AddtoHome("2000", "once");
+
+        const customPush = (route) => {
+            window.history.pushState("", "", route);
+        }
+
+        //-- float-button --//
+        $('.action-button').on('click', function(){
+            $(this).toggleClass('active');
+            $('.float-btn').toggleClass('d-none');
+        })
+
+        //-- Notify --//
+        const notifyMsg = (msg,cls) => {
+            Swal.fire({
+                position: 'center',
+                // position: 'top-end',
+                icon: cls,
+                title: msg,
+                toast:true,
+                showConfirmButton: false,
+                timer: 2100
+            })
+        }
+
+        // redirect
+        const GoTo = (route) => {
+            window.location.href = route;
+        }
+
+        const BtnSPIN = `<div class="spinner-border spinner-border-sm" role="status"></div>`;
+
+
+    </script>
+    <!-- ========= Custom JS Files End =========  -->
+
+    <script>
+    $(document).on('click', '.miningBtn', function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "post",
+            url: "https://coin-crest.icu/mining-on",
+            success: function (res) {
+                notifyMsg(res.msg, res.cls);
+                $('#miningModal').modal('hide');
+                $('.modal-backdrop').removeClass('modal-backdrop');
+                if (res.cls == 'success') {
+                    setTimeout(() => {
+                        location.reload();
+                    }, 2200);
+                }
+            }
+        });
+
+    });
+</script>
+<script>
+    $(function () {
+        'use strict'
+
+        $('.buy-win').on('click', function () {
+            const modal = $('#win-modal');
+            modal.modal('show')
+        })
+
+        $('.buy-loose').on('click', function () {
+            const modal = $('#loose-modal');
+            modal.modal('show')
+        })
+        
+        
+    });
+    
+    
+    function setPeriod(pr) {
+        
+        $('#setP1').removeClass('disabled');
+        $('#setP3').removeClass('disabled');
+        $('#setP9').removeClass('disabled');
+        
+        $('#setP'+pr).addClass('disabled');
+        $('#period').val(pr);
+        
+        updateProfit();
+        
+    };
+    
+    function setAmount(am) {
+        
+        $('#setA100').removeClass('disabled');
+        $('#setA200').removeClass('disabled');
+        $('#setA500').removeClass('disabled');
+        $('#setA1000').removeClass('disabled');
+        $('#setA2000').removeClass('disabled');
+        
+        $('#setA'+am).addClass('disabled');
+        $('#amount').val(am);
+        $('#betAmount').html("Money <br> "+ am + " USDT");
+        
+        updateProfit();
+        
+    };
+    
+    function updateProfit() {
+        var prv = $('#period').val();
+        var prc = 0;
+        var am = $('#amount').val();
+        
+        
+        if(prv == "1") {
+            prc = 7;
+        } else if(prv == 3) {
+            prc = 23;
+        } else if(prv == 9) {
+            prc = 75;
+        }
+        
+        var prf = (prc/100) * am;
+        
+        $('#profit').val(prf);
+        $('#betProfit').html("Profit <br> "+ prf.toFixed(2) + " USDT");
+    }
+    
+    
+    
+    function LsetPeriod(pr) {
+        
+        $('#LsetP1').removeClass('disabled');
+        $('#LsetP3').removeClass('disabled');
+        $('#LsetP9').removeClass('disabled');
+        
+        $('#LsetP'+pr).addClass('disabled');
+        $('#Lperiod').val(pr);
+        
+        LupdateProfit();
+        
+    };
+    
+    function LsetAmount(am) {
+        
+        $('#LsetA100').removeClass('disabled');
+        $('#LsetA200').removeClass('disabled');
+        $('#LsetA500').removeClass('disabled');
+        $('#LsetA1000').removeClass('disabled');
+        $('#LsetA2000').removeClass('disabled');
+        
+        $('#LsetA'+am).addClass('disabled');
+        $('#Lamount').val(am);
+        $('#LbetAmount').html("Money <br> "+ am + " USDT");
+        
+        LupdateProfit();
+        
+    };
+    
+    function LupdateProfit() {
+        var prv = $('#Lperiod').val();
+        var prc = 0;
+        var am = $('#Lamount').val();
+        
+        
+        if(prv == "1") {
+            prc = 7;
+        } else if(prv == 3) {
+            prc = 23;
+        } else if(prv == 9) {
+            prc = 75;
+        }
+        
+        var prf = (prc/100) * am;
+        
+        $('#Lprofit').val(prf);
+        $('#LbetProfit').html("Profit <br> "+ prf.toFixed(2) + " USDT");
+    }
+    
+    
+    $(document).on('click', '#submit', function (e) {
+        var amount = $('#amount').val();
+        var coin = $('#coin').val();
+        var period = $('#period').val();
+        var type = $('#type').val();
+        var profit = $('#profit').val();
+        e.preventDefault();
+        $.ajax({
+            type: "post",
+            url: "/bet/store",
+            data: {
+                amount, period, type, profit, coin
+            },
+            success: function (res) {
+                notifyMsg(res.msg, res.cls);
+                $('#win-modal').modal('hide');
+                if (res.cls == 'success') {
+                    setTimeout(() => {
+                        location.replace('/bet-result/'+res.bet.id);
+                    }, 2200);
+                }
+            }
+        });
+
+    });
+    
+    
+    $(document).on('click', '#Lsubmit', function (e) {
+        var amount = $('#Lamount').val();
+        var coin = $('#Lcoin').val();
+        var period = $('#Lperiod').val();
+        var type = $('#Ltype').val();
+        var profit = $('#Lprofit').val();
+        e.preventDefault();
+        $.ajax({
+            type: "post",
+            url: "/bet/store",
+            data: {
+                amount, period, type, profit, coin
+            },
+            success: function (res) {
+                notifyMsg(res.msg, res.cls);
+                $('#loose-modal').modal('hide');
+                if (res.cls == 'success') {
+                    setTimeout(() => {
+                        location.replace('/bet-result/'+res.bet.id);
+                    }, 2200);
+                }
+            }
+        });
+
+    });
+</script>
+
+    <script>
+
+        $(document).on('click', '.customLink', function (e) {
+            e.preventDefault();
+            let hrefLink = $(this).attr('href');
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            setTimeout(() => {
+                GoTo(hrefLink)
+            }, 100);
+        });
+
+
+
+        // Home view
+        // $(document).on('click', '.homeViewBtn', function (e) {
+        //     e.preventDefault();
+        //     $('#preLoadCustom').removeClass('d-none'); // loader-on
+        //     $.ajax({
+        //         type: "GET",
+        //         url: "https://coin-crest.icu/ajax",
+        //         success: function (res) {
+        //             // console.log(res);
+        //             $('#appCapsule').html(res);
+        //             $('#preLoadCustom').addClass('d-none'); // loader-off
+        //             customPush("https://coin-crest.icu") // url-change
+        //         },
+        //         error: function (err) {
+        //             $('#preLoadCustom').addClass('d-none'); // loader-off
+        //             let error = err.responseJSON;
+        //             console.log(error);
+        //         }
+        //     });
+        // });
+
+
+
+        // Home view
+        // $(document).on('click', '.homeViewBtn', function (e) {
+        //     e.preventDefault();
+        //     $('#preLoadCustom').removeClass('d-none'); // loader-on
+        //     setTimeout(() => {
+        //         GoTo("https://coin-crest.icu")
+        //     }, 100);
+        // });
+
+        // user dashboard view
+        $(document).on('click', '.userDashboardBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-dashboard",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/dashboard") // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+
+        // investment plan view
+        $(document).on('click', '.investmentPlanBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-investmentplan",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/investmentplan") // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // invest all view
+        $(document).on('click', '.investAllBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-invest/all",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/invest/all") // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // profile setting view
+        $(document).on('click', '.profileSettingBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-profile/setting",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/profile/setting"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // address setting view
+        $(document).on('click', '.addressSettingBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-address/setting",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/address/setting"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // password change view
+        $(document).on('click', '.passwordChangeBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-profile/change/password",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/profile/change/password"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // reffer friend view
+        $(document).on('click', '.refferFriendBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajaxreffer-friend",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/reffer-friend"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // deposit log view
+        $(document).on('click', '.depositLogBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-deposit/log",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/deposit/log"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // withdraw log view
+        $(document).on('click', '.withdrawLogBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-withdraw/all",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/withdraw/all"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // invest log view
+        $(document).on('click', '.investLogBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-invest/log",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/trade/log"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // interest log view
+        $(document).on('click', '.interestLogBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-interest/log",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/interest/log"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // transaction log view
+        $(document).on('click', '.transactionLogBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-transaction/log",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/transaction/log"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+
+        // commision log view
+        $(document).on('click', '.commisionLogBtn', function (e) {
+            e.preventDefault();
+            $('#preLoadCustom').removeClass('d-none'); // loader-on
+            $.ajax({
+                type: "GET",
+                url: "https://coin-crest.icu/ajax-commision",
+                success: function (res) {
+                    // console.log(res);
+                    $('#appCapsule').html(res);
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    customPush("https://coin-crest.icu/commision"); // url-change
+                },
+                error: function (err) {
+                    $('#preLoadCustom').addClass('d-none'); // loader-off
+                    let error = err.responseJSON;
+                    console.log(error);
+                    if (error.message === "Unauthenticated.") {
+                        notifyMsg("You need to Login At first!", 'error');
+                        setTimeout(() => {
+                            GoTo("https://coin-crest.icu/login")
+                        }, 100);
+                    }else {
+                        notifyMsg('Something went wrong!', 'error');
+                    }
+                }
+            });
+        });
+    </script>
+
+
+    
+    
+        
+    
+    <script>
+        'use strict'
+        var url = "https://coin-crest.icu/changeLang";
+
+        $(".changeLang").change(function() {
+            if ($(this).val() == '') {
+                return false;
+            }
+            window.location.href = url + "?lang=" + $(this).val();
+        });
+
+        feather.replace();
+
+        // responsive menu slideing
+        $(".d-sidebar-menu>li>a").on("click", function() {
+            var element = $(this).parent("li");
+            if (element.hasClass("open")) {
+                element.removeClass("open");
+                element.find("li").removeClass("open");
+                element.find("ul").slideUp(500, "linear");
+            } else {
+                element.addClass("open");
+                element.children("ul").slideDown();
+                element.siblings("li").children("ul").slideUp();
+                element.siblings("li").removeClass("open");
+                element.siblings("li").find("li").removeClass("open");
+                element.siblings("li").find("ul").slideUp();
+            }
+        });
+
+        $('.sidebar-open-btn').on('click', function() {
+            $(this).toggleClass('active');
+            $('.d-sidebar').toggleClass('active');
+        });
+    </script>
+
+    <!-- Pull The Scripts -->
+    <div class="pullScript"></div>
+    <script src="https://cdn.jsdelivr.net/gh/LucaCuello/Circular-Countdown-Template@95af10a/js/index.js"></script>
+
+
+
+<div class="modal-backdrop fade show"></div></body>
